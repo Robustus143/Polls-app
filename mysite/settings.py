@@ -27,6 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['.railway.app', 'localhost', '127.0.0.1']
 
+CSRF_TRUSTED_ORIGINS = ['https://*.railway.app']
+
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
